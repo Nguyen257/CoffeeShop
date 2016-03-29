@@ -1,0 +1,5 @@
+F:\My Project\WinForm\CoffeeShop\GUI\DTO\bin\Debug\DTO.dll
+F:\My Project\WinForm\CoffeeShop\GUI\DTO\bin\Debug\DTO.pdb
+F:\My Project\WinForm\CoffeeShop\GUI\DTO\obj\Debug\DTO.csprojResolveAssemblyReference.cache
+F:\My Project\WinForm\CoffeeShop\GUI\DTO\obj\Debug\DTO.dll
+F:\My Project\WinForm\CoffeeShop\GUI\DTO\obj\Debug\DTO.pdb
