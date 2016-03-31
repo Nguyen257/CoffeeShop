@@ -1,7 +1,0 @@
-F:\My Project\WinForm\CoffeeShop\GUI\DAO\bin\Debug\DAO.dll
-F:\My Project\WinForm\CoffeeShop\GUI\DAO\bin\Debug\DAO.pdb
-F:\My Project\WinForm\CoffeeShop\GUI\DAO\bin\Debug\DTO.dll
-F:\My Project\WinForm\CoffeeShop\GUI\DAO\bin\Debug\DTO.pdb
-F:\My Project\WinForm\CoffeeShop\GUI\DAO\obj\Debug\DAO.csprojResolveAssemblyReference.cache
-F:\My Project\WinForm\CoffeeShop\GUI\DAO\obj\Debug\DAO.dll
-F:\My Project\WinForm\CoffeeShop\GUI\DAO\obj\Debug\DAO.pdb

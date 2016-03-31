@@ -93,5 +93,71 @@ namespace DAO
                 return 0;
             }
         }
+
+        public int xoaNhanVien (int id)
+        {
+            SqlConnection cn = this.KetNoiCSDL();
+            try
+            {
+                cn.Open();
+                SqlCommand cm = new SqlCommand("NV_DELETE", cn);
+                cm.CommandType = CommandType.StoredProcedure;
+
+                SqlParameter paid = new SqlParameter("@ID", SqlDbType.Int);
+                paid.Direction = ParameterDirection.Input;
+                paid.Value = id;
+                cm.Parameters.Add(paid);
+
+                
+                try
+                {
+                    cm.ExecuteNonQuery();
+                    cn.Close();
+                    return 1;
+                }
+                catch
+                {
+                    cn.Close();
+                    return 0;
+                }
+            }
+            catch
+            {
+                cn.Close();
+                return 0;
+            }
+        }
+    
+
+        public List<NHANVIEN_DTO> GetAll()
+        {
+            List<NHANVIEN_DTO> kq = new List<NHANVIEN_DTO>();
+            string str = "SELECT * FROM NHANVIEN";
+            SqlConnection cn = this.KetNoiCSDL();
+            try
+            {
+                cn.Open();
+                SqlCommand command = new SqlCommand(str, cn);
+                SqlDataReader r = command.ExecuteReader();
+
+                while (r.Read())
+                {
+                    NHANVIEN_DTO row = new NHANVIEN_DTO();
+                    row.ID = (int)r["ID"];
+                    if (r["Ten"] != DBNull.Value)
+                        row.Ten = (String)r["Ten"];
+                    if (r["SDT"] != DBNull.Value)
+                        row.SDT = (String)r["SDT"];
+
+                    kq.Add(row);
+                }
+                cn.Close();
+                return kq;
+            }
+            catch(Exception ex)
+            {
+                return null;
+            }
+        }
     }
 }

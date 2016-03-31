@@ -1,9 +1,0 @@
-F:\My Project\WinForm\CoffeeShop\GUI\BUS\bin\Debug\BUS.dll
-F:\My Project\WinForm\CoffeeShop\GUI\BUS\bin\Debug\BUS.pdb
-F:\My Project\WinForm\CoffeeShop\GUI\BUS\bin\Debug\DAO.dll
-F:\My Project\WinForm\CoffeeShop\GUI\BUS\bin\Debug\DTO.dll
-F:\My Project\WinForm\CoffeeShop\GUI\BUS\bin\Debug\DAO.pdb
-F:\My Project\WinForm\CoffeeShop\GUI\BUS\bin\Debug\DTO.pdb
-F:\My Project\WinForm\CoffeeShop\GUI\BUS\obj\Debug\BUS.csprojResolveAssemblyReference.cache
-F:\My Project\WinForm\CoffeeShop\GUI\BUS\obj\Debug\BUS.dll
-F:\My Project\WinForm\CoffeeShop\GUI\BUS\obj\Debug\BUS.pdb
