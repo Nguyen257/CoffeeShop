@@ -11,7 +11,7 @@ namespace DTO
         public int ID { get; set; }
         public int MaHang { get; set; }
         public int SoLuong { get; set; }
-        public float DonGia { get; set; }
+        public double DonGia { get; set; }
 
         public CTHOADON_DTO ()
         {

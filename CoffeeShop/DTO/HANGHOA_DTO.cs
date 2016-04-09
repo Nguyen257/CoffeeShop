@@ -12,10 +12,10 @@ namespace DTO
         public int IDNhom { get; set; }
         public string Ten { get; set; }
         public string DVTinh { get; set; }
-        public float GiaVon { get; set; }
-        public float GiaBuon { get; set; }
-        public float GiaLe { get; set; }
-        public float ChietKhauXuat { get; set; }
+        public double GiaVon { get; set; }
+        public double GiaBuon { get; set; }
+        public double GiaLe { get; set; }
+        public double ChietKhauXuat { get; set; }
         public int TonKho { get; set; }
 
         public HANGHOA_DTO ()
