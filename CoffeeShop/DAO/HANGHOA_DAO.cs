@@ -201,16 +201,18 @@ namespace DAO
                     row.ID = (int)r["ID"];
                     if (r["IDNhom"] != DBNull.Value)
                         row.IDNhom = (int)r["IDNhom"];
+                    if (r["Ten"] != DBNull.Value)
+                        row.Ten = (String)r["Ten"];
                     if (r["DVTinh"] != DBNull.Value)
                         row.DVTinh = (String)r["DVTinh"];
                     if (r["GiaLe"] != DBNull.Value)
-                        row.GiaLe = (float)r["GiaLe"];
+                        row.GiaLe = (double)r["GiaLe"];
                     if (r["GiaBuon"] != DBNull.Value)
-                        row.GiaBuon = (float)r["GiaBuon"];
+                        row.GiaBuon = (double)r["GiaBuon"];
                     if (r["GiaVon"] != DBNull.Value)
-                        row.GiaVon = (float)r["GiaVon"];
+                        row.GiaVon = (double)r["GiaVon"];
                     if (r["ChietKhauXuat"] != DBNull.Value)
-                        row.ChietKhauXuat = (float)r["ChietKhauXuat"];
+                        row.ChietKhauXuat = (double)r["ChietKhauXuat"];
                     if (r["TonKho"] != DBNull.Value)
                         row.TonKho = (int)r["TonKho"];
 

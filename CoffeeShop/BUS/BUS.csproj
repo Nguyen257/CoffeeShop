@@ -41,6 +41,7 @@
   <ItemGroup>
     <Compile Include="BAN_BUS.cs" />
     <Compile Include="HANGHOA_BUS.cs" />
+    <Compile Include="KHACHHANG_BUS.cs" />
     <Compile Include="NHANVIEN_BUS.cs" />
     <Compile Include="NHOMHANG_BUS.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

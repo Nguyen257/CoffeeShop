@@ -18,15 +18,15 @@ namespace GUI
         public Form1()
         {
             InitializeComponent();
-            HANGHOA_BUS bus = new HANGHOA_BUS();
+            KHACHHANG_BUS bus = new KHACHHANG_BUS();
+            
 
-
-            bus.themHang_BUS(2,"aad","qwd",15,15.5,15.3,15,15);
-            List<HANGHOA_DTO> kq = bus.getAll_BUS();
+            List<KHACHHANG_DTO> kq = bus.getAll_BUS();
             dataGridViewX1.ReadOnly = true;
             dataGridViewX1.DataSource = kq;
             dataGridViewX1.Columns[1].AutoSizeMode = DataGridViewAutoSizeColumnMode.Fill;
-            dataGridViewX1.Columns[1].HeaderText = "Họ và Tên";
+            dataGridViewX1.Columns[2].AutoSizeMode = DataGridViewAutoSizeColumnMode.Fill;
+            
         }
     }
 }
