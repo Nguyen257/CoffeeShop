@@ -41,7 +41,9 @@
   <ItemGroup>
     <Compile Include="AbstractDAO.cs" />
     <Compile Include="BAN_DAO.cs" />
+    <Compile Include="CTHD_DAO.cs" />
     <Compile Include="HANGHOA_DAO.cs" />
+    <Compile Include="HOADON_DAO.cs" />
     <Compile Include="KHACHHANG_DAO.cs" />
     <Compile Include="NHANVIEN_DAO.cs" />
     <Compile Include="NHOMHANG_DAO.cs" />
