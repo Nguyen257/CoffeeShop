@@ -18,13 +18,13 @@ namespace GUI
         public Form1()
         {
             InitializeComponent();
-            BAN_BUS bus = new BAN_BUS();
+            NHOMHANG_BUS bus = new NHOMHANG_BUS();
             
 
-            bus.themBan_BUS("cai ban");
+            bus.themNhom_BUS("cai nhom");
             bus.updateBan_BUS(2, "cai ban moi");
             bus.xoaBan_BUS(3);
-            List<BAN_DTO> kq = bus.getAll_BUS();
+            List<NHOMHANG_DTO> kq = bus.getAll_BUS();
             dataGridViewX1.ReadOnly = true;
             dataGridViewX1.DataSource = kq;
             dataGridViewX1.Columns[1].AutoSizeMode = DataGridViewAutoSizeColumnMode.Fill;
