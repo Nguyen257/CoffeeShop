@@ -13,7 +13,7 @@ namespace DAO
     public class HOADON_DAO:AbstractDAO
     {
 
-        public int themHoaDon(int id, string NgayLap,int NguoiLap)
+        public int themHoaDon(int NguoiLap)
         {
              SqlConnection cn = this.KetNoiCSDL();
              try
@@ -21,16 +21,6 @@ namespace DAO
                  cn.Open();
                  SqlCommand cm = new SqlCommand("HD_INSERT", cn);
                  cm.CommandType = CommandType.StoredProcedure;
-
-                 SqlParameter paid = new SqlParameter("@id", SqlDbType.Int);
-                 paid.Direction = ParameterDirection.Input;
-                 paid.Value = id;
-                 cm.Parameters.Add(paid);
-
-                 SqlParameter paNgayLap = new SqlParameter("@NgayLap", SqlDbType.Char, 50);
-                 paNgayLap.Direction = ParameterDirection.Input;
-                 paNgayLap.Value = NgayLap;
-                 cm.Parameters.Add(paNgayLap);
 
                  SqlParameter paNguoiLap = new SqlParameter("@NguoiLap", SqlDbType.Int);
                  paNguoiLap.Direction = ParameterDirection.Input;

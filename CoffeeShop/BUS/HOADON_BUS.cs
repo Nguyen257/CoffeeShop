@@ -10,10 +10,10 @@ namespace BUS
 {
     public class HOADON_BUS
     {
-        public int themHD_BUS(int id, string NgayLap, int NguoiLap)
+        public int themHD_BUS( int NguoiLap)
         {
             HOADON_DAO dao = new HOADON_DAO();
-            return dao.themHoaDon(id, NgayLap, NguoiLap);
+            return dao.themHoaDon( NguoiLap);
         }
 
         public int updateHD_BUS(int id,double tongtien)

@@ -18,18 +18,20 @@ namespace GUI
         public Form1()
         {
             InitializeComponent();
-            CTHD_BUS bus = new CTHD_BUS();
             /*
+            HOADON_BUS bus = new HOADON_BUS();
+            
             DateTime localDate = DateTime.Now;
             var culture = new CultureInfo("en-US");
-            int x = bus.updateHD_BUS(4, 43.5);*/
-            List<CTHOADON_DTO> kq = bus.getAll_BUS();
+            int x = bus.updateHD_BUS(4, 43.5);
+            bus.themHD_BUS(5);
+            List<HOADON_DTO> kq = bus.getAll_BUS();
             dataGridViewX1.ReadOnly = true;
             dataGridViewX1.DataSource = kq;
             
             try
             {
-                for (int i = 0; i < dataGridViewX1.RowCount - 1; i++)
+                for (int i = 0; i < dataGridViewX1.RowCount ; i++)
                 {
                     dataGridViewX1.Columns[i].AutoSizeMode = DataGridViewAutoSizeColumnMode.Fill;
 
@@ -37,6 +39,7 @@ namespace GUI
             }
             catch (Exception ex)
             { }
+            */
         }
     }
 }
